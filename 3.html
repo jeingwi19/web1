@@ -3,9 +3,18 @@
 <head>
   <title>WEB1 - JavaScript</title>
   <meta charset="utf-8">
+  <style>
+    a{
+      color:white;
+    }
+  </style>
 </head>
-<body>
+<body style="background-color: black; color:white;">
   <h1><a href="index.html">WEB</a></h1>
+  <input type="button" value="Night" onelick="document.querySelector('body').style.backgroundColor='black';
+  document.querySelector('body').style.color='white';">
+  <input type="button" value="Day" onelick="document.querySelector('body').style.backgroundColor='white';
+  document.querySelector('body').style.color='black';">
   <ol>
     <li><a href="1.html">html</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -13,13 +22,20 @@
     <li><a href="mediaquery1_2.html">MediaQuery</a></li>
     <li><a href="mediaquery1_3.html">style.css</a></li>
   </ol>
-  <ul>
-    <li>토요일</li>
-    <li>일요일</li>
-  </ul>
   <h2>JavaScript란?</h2>
   <p>
-    JavaScript (/ˈdʒɑːvəˌskrɪpt/),[8] often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+    JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.<br>
+    <h2>Html과 JavaScript차이</h2>
+    <div style="margin-left:20px;">
+      <h3><strong>JavaScript</strong></h3>
+      <p style="margin-top:-10px;">
+        <script>
+          document.write(1+1);
+        </script>
+      </p>
+      <h3><strong>html</strong></h3>
+      <p style="margin-top:-10px;">1+1</p>
+    </div>
   </p><br>
 </body>
 </html>
