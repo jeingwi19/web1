@@ -5,16 +5,20 @@
   <meta charset="utf-8">
   <style>
     a{
-      color:white;
+      text-decoration: none;
     }
   </style>
 </head>
-<body style="background-color: black; color:white;">
+<body>
   <h1><a href="index.html">WEB</a></h1>
-  <input type="button" value="Night" onelick="document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';">
-  <input type="button" value="Day" onelick="document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';">
+  <input type="button" value="Night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="Day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
   <ol>
     <li><a href="1.html">html</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -23,6 +27,11 @@
     <li><a href="mediaquery1_3.html">style.css</a></li>
   </ol>
   <h2>JavaScript란?</h2>
+  <p>* Search a source :<br>
+    <u><a href="https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector" target="_blank">javascript select by css selector</a></u><br>
+    <u><a href="https://www.w3schools.com/jsref/prop_html_style.asp" target="_blank">javascript element style</a></u><br>
+    <u><a href="https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp" target="_blank">javascript style background color</a></u>
+  </p>
   <p>
     JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.<br>
     <h2>Html과 JavaScript차이</h2>
