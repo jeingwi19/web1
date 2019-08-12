@@ -5,28 +5,97 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <style>
+    #article{
+      margin-top:-500px;
+      padding-left:300px;
+    }
+    #sheet1{
+      border-right: 1px solid #222;
+      width: 238px; height: 500px;
+      margin:0;
+      padding:20px;
+    }
+    #menu_t{
+      margin-top:-32px;
+    }
+    #bgg1{
+      background-image: url( "info_cern_ch_1.png" );
+    }
+    .bg1{
+      background-repeat: no-repeat;
+      width: 800px;
+      height: 600px;
+      margin-left: 700px;
+      margin-top: -550px;
+    }
+    .boddy{
+      display: grid;
+      grid-template-columns: repeat(238px,1fr);
+      grid-template-rows: 12px;
+    }
+    .nav{
+      text-align: center;
+      display: grid;
+      border-bottom: 1px solid #222;
+      width: 100%; height: 52px;
+      grid-template-columns: repeat(5,1fr);
+      grid-template-rows: 12px;
+      grid-gap: 2rem;
+      justify-content: center;
+      align-content: end;
+      font-family:"Consolas", 돋움, dotum, sans-serif;
+      font-size:24pt; font-weight:700;
+    }
     a {
       color:black;
       text-decoration: none;
     }
+    h1{
+      font-family:"Courier New";
+      font-weight: 400;
+      font-size:80pt;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-  <h1 class="animated shake delay-1s"><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">html</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-    <li><a href="mediaquery1_2.html">MediaQuery</a></li>
-    <li><a href="mediaquery1_3.html">style.css</a></li>
-  </ol>
-  <h2>코딩야학2019</h2>
-  <ul>
-    <li>월~금</li>
-  </ul>
-  <h2>WEB이란?</h2>
-  <p>
-    The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as)
-  </p>
+  <h1 style="height:92px;" class="animated shake delay-1s"><a href="index.html">WEB</a></h1>
+  <div class="nav">
+    <span id="menu_t"><strong><a href="1.html">html</a></strong></span>
+    <span id="menu_t"><strong><a href="2.html">CSS</a></strong></span>
+    <span id="menu_t"><strong><a href="3.html">JavaScript</a></strong></span>
+    <span id="menu_t"><strong><a href="mediaquery1_2.html">MediaQuery</a></strong></span>
+    <span id="menu_t"><strong><a href="mediaquery1_3.html">style.css</a></strong></span>
+  </div>
+
+  <div id="sheet1" class="boddy">
+    <h2 style="margin-left:40px;">코딩야학2019</h2>
+    <ul style="margin-top:48px; margin-left:20px;">
+      <li><strong>월~금</strong></li>
+    </ul>
+      <ol
+        style="border-top:1px solid black; width:32px; margin-left:120px; margin-top:-28px; font-size:20pt;"><br>
+        <li style="margin-left:-80px;">html</li>
+        <li style="margin-left:-80px;">CSS</li>
+        <li style="margin-left:-80px;">JavaScript</li>
+        <li style="margin-left:-80px;">MediaQuery</li>
+        <li style="margin-left:-80px;">style.css</li>
+      </ol><br>
+      <span style="margin-left:20px;">
+        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" width="200px">
+        <div id="article">
+      </span>
+        <h2 style="width: 680px; font-size:40pt;">WEB이란?</h2>
+        <p style="margin-top:-8px;">
+          The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as)
+        </p>
+        <h3>최근강의듣기</h3>
+        <p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vwRkFRke7ls" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+      </div>
+  </div>
+  <div id="bgg1" class="bg1">
+  </div>
 </body>
 </html>
