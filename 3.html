@@ -19,6 +19,17 @@
     document.querySelector('body').style.backgroundColor = 'white';
     document.querySelector('body').style.color = 'black';
   ">
+  <input id="night_day" type="button" value="Night" onclick="
+    if(document.querySelector('#night_day').value === 'Night'){
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+        document.querySelector('#night_day').value = 'Day';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#night_day').value = 'Night';
+    }
+  ">
   <ol>
     <li><a href="1.html">html</a></li>
     <li><a href="2.html">CSS</a></li>
@@ -30,10 +41,16 @@
   <p>* Search a source :<br>
     <u><a href="https://developer.mozilla.org/ko/docs/Web/API/Document/querySelector" target="_blank">javascript select by css selector</a></u><br>
     <u><a href="https://www.w3schools.com/jsref/prop_html_style.asp" target="_blank">javascript element style</a></u><br>
-    <u><a href="https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp" target="_blank">javascript style background color</a></u>
+    <u><a href="https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp" target="_blank">javascript style background color</a></u><br>
+    <strong><a href="ex4.html">조건문 예제(1)</a></strong><br>
+    <strong><a href="ex5.html">조건문 예제(2)</a></strong><br>
+    toggle button 참고 데이터 : <u><a href="https://stackoverflow.com/questions/4173391/getting-dom-element-value-using-pure-javascript" target="_blank">javascript element get value</a></u><br>
+    <h3><참고강의></h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gt2iGEEKXww" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </p>
-  <p>
-    JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.<br>
+  <h2>JavaScript</h2>
+  <p style="margin-top:-16px;">
+    JavaScript (/ˈdʒɑːvəˌskrɪpt/), often abbreviated as JS, is a high-level, interpreted programming language that conforms to the ECMAScript specification. JavaScript has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.<br><br>
     <h2>Html과 JavaScript차이</h2>
     <div style="margin-left:20px;">
       <h3><strong>JavaScript</strong></h3>
